@@ -22,7 +22,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1><a href="index.html">JavaJam Coffee Bar Menu</a></h1>
+            <h1><a href="index.html">JavaJam Coffee Bar Jobs</a></h1>
         </header>
 
         <nav>
@@ -35,31 +35,22 @@
         </nav>
 
         <main>
-            <div id="heromugs">
+            <div id="herojobs">
             </div>
-            <h2>Coffee at JavaJam:</h2>
-            <p>Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth taste, the caffeine!
-                Join our Mug Club and get a 10% discount on each cup of coffee you purchase — ask the barista for
-                details.</p>
-            <div id="flow">
-                <table>
-                    <tr>
-                        <th>1. Just Java</th>
-                        <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>-Endless Cup: $3.50</td>
-                    </tr>
-                    <tr>
-                        <th>2. Cafe au Lait</th>
-                        <td>House blended coffee infused into a smooth, steamed milk.<br>-Single: $4.00 <br>-Double:
-                            $5.00</td>
-                    </tr>
-                    <tr>
-                        <th>3. Iced Cappuccino</th>
-                        <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>-Single:
-                            $5.00<br>-Double:
-                            $6.50</td>
-                    </tr>
-                </table>
-            </div>
+            <h2>Jobs at JavaJam</h2>
+            <p>Want to work at JavaJam? Fill out the form below to
+                start your application! All information is required. </p>
+            <form method="post" action="https://webdevbasics.net/scripts/javajam8.php">   
+                <label for="myName">Name: </label> 
+                <input type="text" id="myName" name="myName" required>
+                <label for="myEmail">E-mail: </label>
+                <input type="email" id="myEmail" name="myEmail" required> 
+                <label for="myStart">Start Date: </label>
+                <input type="date" id="myStart" name="myStart" required>
+                <label for="myExperience">Experience: </label>
+                <textarea name="myExperience" id="myExperience" rows="2" cols="20" required></textarea>
+                <input type="submit" value="Apply Now!">
+            </form>
         </main>
 
         <footer>
