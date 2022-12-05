@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    }
+
+/* Configure Small Layout */
+
+body {
+    background-color: #8f4e4d;
+    color: #221811;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: #794242;
+    padding: 0;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-color: #8f6556;
+    height: 128px;
+    padding-left: 105px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #d3c9c9;
+    outline: 5px #000;
+}
+
+header a:visited {
+    color: #d3c9c9;
+    outline: 5px #000;
+}
+
+header a:hover {
+    color: #792727;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Faster One', cursive;
+    color: #DAE2E7;
+    outline: 5px #000;
+}
+
+h2 {
+    color: #8C3826;
+}
+
+h3,
+dt {
+    color: #8C3826;
+    font-size: 1.5em;
+}
+
+h4 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#drivers {
+    background-color: #bfcccf;
+    font-size: 1.2em;
+    float: right;
+    padding: 1em 1em 1em 1em;
+    text-align: left;
+    text-transform: uppercase;
+
+    /* border-bottom: 1px solid #221811; */
+    clear: left;
+}
+
+
+nav {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', cursive;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #3B4D57;
+}
+
+nav a:visited {
+    color: #D2B48C;
+}
+
+nav a:hover {
+    color: #CC9933;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 1px solid #FEF6C2;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+main {
+    background-color: #7295aa;
+    display: block;
+    padding: 0 0 0 0;
+}
+
+main h2,
+h3,
+h4,
+p,
+div,
+ul,
+dl {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main ul {
+    padding-left: 2em;
+}
+
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none;
+}
+
+footer {
+    background-color: hsla(34, 29%, 33%, 0.562);
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 1em;
+    border-top: 2px solid #8C3826;
+}
+
+/* Medium Layout */
+@media (min-width: 600px) {
+    header {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #homehero {
+        background-image: url(images/pitstop1.jpg);
+        height: 50vh;
+    }
+
+    #heromugs {
+        background-image: url(images/heromugs.jpg);
+    }
+
+    #heroguitar {
+        background-image: url(images/heroguitar.jpg);
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h4 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* Large Layout */
+@media (min-width: 1024px) {
+    @supports (display: grid) {
+        header {
+            grid-area: header;
+            padding-bottom: 200px;
+        }
+
+        h1 {
+            font-size: 6em;
+            color: #000000;
+            outline-color: #000;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        main {
+            grid-area: main;
+            padding-left: 100px;
+            padding-right: 100px;
+            background-position: center;
+            /* background-color: #000; */
+            /* padding: 0 5em 0 5em; */
+        }
+
+        h2 {
+            padding-top: 5px;
+            padding-left: 0px;
+            font-size: 3em;
+            text-align: left;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #homehero {
+            background-position: center;
+            height: 500px;
+            background-image: url(images/race-car-gc6c578599_1920.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template:
+                "header header"
+                "nav nav"
+                "main main"
+                "footer footer"
+                / 200px;
+        }
+
+        nav ul {
+            flex-direction: row;
+            padding-right: 200px;
+        }
+
+        header {
+            background-size: 100% 100%;
+            background-color: #8f6556;
+            border-radius: 25px;
+        }
+
+        #flow {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}

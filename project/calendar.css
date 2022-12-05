@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Small Layout */
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 0vh;
+    font-size: 2em;
+    font-family: 'Faster One', cursive;
+    color: #DAE2E7;
+    outline: 5px #000;
+}
+
+body {
+    text-align: center;
+    margin-top: 50vh
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+
+header a:link {
+    color: #fff;
+    outline: 5px #000;
+}
+
+header a:visited {
+    color: #fff;
+    outline: 5px #000;
+}
+
+header a:hover {
+    color: #792727;
+}
+
+nav {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', cursive;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #3B4D57;
+}
+
+nav a:visited {
+    color: #522219;
+}
+
+nav a:hover {
+    color: #CC9933;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 1px solid #3B4D57;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+main {
+    display: block;
+    padding: 0 0 2em 0;
+}
+
+main h2,
+h3,
+h4,
+p,
+div,
+ul,
+dl {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main ul {
+    padding-left: 2em;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none;
+}
+
+#calendar {
+    text-align: center;
+    margin-top: 5vh;
+    opacity: 0.5;
+    height: auto;
+
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 1em;
+    border-top: 2px solid;
+}
+
+#calendar:hover {
+    text-align: center;
+    margin-top: 5vh;
+    opacity: 1;
+}
+
+/* Medium Layout */
+@media (min-width: 600px) {
+    video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 3em;
+        font-family: 'Faster One', cursive;
+        color: #DAE2E7;
+        outline: 5px #000;
+    }
+
+    body {
+        text-align: center;
+        margin-top: 50vh
+    }
+
+    nav ul {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    #calendar {
+        text-align: center;
+        margin-top: 5vh;
+        opacity: 0.5;
+        height: auto;
+    }
+
+    #calendar:hover {
+        text-align: center;
+        margin-top: 5vh;
+        opacity: 1;
+    }
+
+    /* Large Layout */
+    @media (min-width: 1024px) {
+        @supports (display: grid) {
+            video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            header {
+                grid-area: header;
+                text-align: center;
+                padding-top: 0px;
+            }
+
+            h1 {
+                grid-area: header;
+                color: #fff;
+                text-align: center;
+                font-size: 5em;
+                margin-top: 0vh;
+                font-family: 'Faster One', cursive;
+                color: #DAE2E7;
+                outline: 5px #000;
+            }
+
+            nav {
+                font-size: 2em;
+                font-family: 'Bebas Neue', cursive;
+            }
+
+            body {
+                text-align: center;
+                margin-top: 50vh
+            }
+
+            main {
+                text-align: center;
+            }
+
+            footer {
+                grid-area: footer;
+            }
+
+            nav ul {
+                flex-direction: row;
+                padding-right: 100px;
+            }
+
+            #calendar {
+                text-align: center;
+                margin-top: 5vh;
+                opacity: 0.5;
+                height: auto;
+            }
+
+            #calendar:hover {
+                text-align: center;
+                margin-top: 5vh;
+                opacity: 1;
+            }
+        }
+    }
+}
