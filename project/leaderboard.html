@@ -6,17 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bryant Tingey &mdash; Leaderboard</title>
-  <meta name="description" content="JavaJam Coffee Bar Case Study">
+  <meta name="description" content="Final Project">
   <meta name="author" content="Bryant Tingey">
   <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
 
   <link href="leaderboard.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@500&family=Bungee+Inline&family=Faster+One&family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@500&family=Bungee+Inline&family=Faster+One&family=Montserrat+Subrayada:wght@700&display=swap"
+    rel="stylesheet">
   <link rel="shortcut icon" href="checkered-flag-icon.ico">
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8D1WYMY6L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-Z8D1WYMY6L');
+  </script>
 </head>
 
 <body>
@@ -27,51 +44,58 @@
   <nav>
     <ul>
       <li><a href="index.html">Dashboard</a></li>
-      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a class="current" href="leaderboard.html">Leaderboard</a></li>
       <li><a href="team.html">Teams</a></li>
       <li><a href="calendar.html">Season Calendar</a></li>
+      <li><a href="search.html" aria-label="search"><i class="fa fa-search"></i></a></li>
     </ul>
   </nav>
 
   <main>
-    <p>Dolor culpa eiusmod occaecat in magna voluptate. 
-      Sint esse labore mollit elit sit ex amet nostrud. Occaecat sit voluptate dolore qui deserunt labore laborum aliquip excepteur culpa. Id elit eiusmod nostrud ea commodo cillum officia eiusmod.</p>
-  
-    <p>Ex mollit laboris ad nisi consequat officia sint. Aliquip consequat qui cillum ullamco duis ad ullamco do dolore aliquip adipisicing duis commodo amet. Nulla cupidatat reprehenderit non mollit id nisi enim incididunt mollit.</p>
-    <br></br>
+    <p>Dolor culpa eiusmod occaecat in magna voluptate.
+      Sint esse labore mollit elit sit ex amet nostrud. Occaecat sit voluptate dolore qui deserunt labore laborum
+      aliquip excepteur culpa. Id elit eiusmod nostrud ea commodo cillum officia eiusmod.</p>
+
+    <p>Ex mollit laboris ad nisi consequat officia sint. Aliquip consequat qui cillum ullamco duis ad ullamco do dolore
+      aliquip adipisicing duis commodo amet. Nulla cupidatat reprehenderit non mollit id nisi enim incididunt mollit.
+    </p>
+    <br>
 
     <div class="row">
       <div class="column">
-      <h2>Current Seasonal Driver Standings: </h2>
-      <div>
-        <button class="btn">Click Me</button>
-        <div class="output"></div>
-        <!-- <button class="btn1">Clear</button> -->
+        <h2>Current Seasonal Driver Standings: </h2>
+        <div>
+          <button class="btn">Click Me</button>
+          <div class="output"></div>
+        </div>
+        <script src="js/standings.js"></script>
       </div>
-      <script src = "js/standings.js"></script>
-      </div>
-      
+
 
       <div class="column">
-      <h2>Current Seasonal Constructor (Team) Standings: </h2>
-      <div>
-        <button class="btn2">Click Me 2</button>
-        <div class="output2"></div>
-        <!-- <button class="btn1">Clear</button> -->
+        <h2>Current Seasonal Constructor (Team) Standings: </h2>
+        <div>
+          <button class="btn2">Click Me 2</button>
+          <div class="output2"></div>
+        </div>
+        <script src="js/standings-team.js"></script>
       </div>
-      <script src = "js/standings-team.js"></script>
-      </div>
-      <br></br>
+      <br>
     </div>
 
-    </main>
+  </main>
 
-    <footer>
-      Copyright &copy; &bigstar; 2022 The Pit-Stop &bigstar;<br>
-      <a href="mailto:yourfirstname.yourlastname@javajamcoffee.com">bryant.tingey@ThePitStop.com</a>
-      <br>
-      <a href="#top">Return to Top</a>
-    </footer> 
+  <footer>
+    Copyright &copy; &bigstar; 2022 The Pit-Stop &bigstar;<a href="#top"> Return to Top</a>
+    <br>
+    <a href="mailto:yourfirstname.yourlastname@ThePit-Stop.com">bryant.tingey@ThePit-Stop.com</a> (339)-123-4567
+    <br>
+    <form id="form" role="search" method="get" action="https://www.google.com/search">
+      <input type="hidden" name="sitesearch" value="https://btingey29.github.io/">
+      <input type="search" id="query" placeholder="Search The Pit-Stop" size=15 aria-label="Search">
+      <button><b>Search</b></button>
+    </form>
+  </footer>
 
 </body>
 

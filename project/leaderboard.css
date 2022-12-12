@@ -1,300 +1,321 @@
 * {
     box-sizing: border-box;
-    }
-    
-    /* Small Layout */
-    body {
-        /* background-image: url(images/Cars/Leaderboard.jpg); */
-        text-align: center;
-        background-position: center;
-        background-size: cover;
-        scroll-behavior: auto;
-        background-repeat: no-repeat;
-        height: 100%;
+}
 
-        font-family: 'Cairo', sans-serif;
-    }
+/* Small Layout */
+body {
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    scroll-behavior: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Cairo', sans-serif;
+}
 
-    html { 
-        background: url(images/Cars/Leaderboard.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
+html {
+    background: url(images/Cars/Leaderboard.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-    img.Leaderboard {
-        min-height: 100%;
-        min-width: 1024px;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-    
+img.Leaderboard {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #3B4D57;
+    border-radius: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #DAE2E7;
+}
+
+header a:visited {
+    color: #DAE2E7;
+}
+
+header a:hover {
+    color: #CC9933;
+}
+
+h1 {
+    font-size: 2.65em;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #3B4D57;
+    outline: 5px #000;
+}
+
+h2 {
+    color: #fff;
+}
+
+h3,
+dt {
+    color: #8C3826;
+    font-size: 1.5em;
+}
+
+h4 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+nav {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #3B4D57;
+    border-bottom: 2px solid #fff;
+    border-radius: 30px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #DAE2E7;
+}
+
+nav a:visited {
+    color: #DAE2E7;
+}
+
+nav a:hover {
+    color: #CC9933;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 1px solid #fff;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+main {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 5.75em;
+    padding-right: 0em;
+    padding-left: 1em;
+    background-color: hsla(233, 27%, 43%, 0.75);
+    font-size: 1em;
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    width: 96%;
+    border-radius: 20px;
+}
+
+main h2,
+h3,
+h4,
+p,
+div,
+ul,
+dl {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main ul {
+    padding-left: 2em;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none;
+}
+
+footer {
+    background-color: #766f62;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 1em;
+    border-top: 2px solid #8C3826;
+
+    position: fixed;
+    bottom: 0;
+    width: 96%;
+    height: 60px;
+}
+
+footer a:link {
+    color: #acc;
+}
+
+footer a:visited {
+    color: #8C3826;
+}
+
+#grid {
+    background-color: hsla(30, 40%, 10%, 0.562);
+    color: #CC9933;
+    width: 100%;
+}
+
+#bungee {
+    font-family: 'Bungee Inline', cursive;
+    color: #fff;
+    padding-right: 10px;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    object-position: left;
+}
+
+.current {
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    font-style: oblique;
+}
+
+/* Medium Layout */
+@media (min-width: 600px) {
     header {
-        text-align: center;
+        border-radius: 100px;
+        width: 75%;
+        margin: auto;
     }
-    
-    header a {
-        text-decoration: none;
-    }
-    
-    header a:link {
-        color: #D2B48C;
-        outline: 5px #000;
-    }
-    
-    header a:visited {
-        color: #D2B48C;
-        outline: 5px #000;
-    }
-    
-    header a:hover {
-        color: #CC9933;
-    }
-    
+
     h1 {
-        font-size: 2.65em;
-        font-family: 'Montserrat Subrayada', sans-serif;
-        color: #3B4D57;
-        outline: 5px #000;
+        font-size: 4em;
     }
-    
-    h2 {
-        color: #fff;
+
+    nav {
+        font-size: 1.2em;
     }
-    
-    h3, dt {
-        color: #8C3826;
-        font-size: 1.5em;
+
+    nav ul {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        font-size: 1em;
     }
-    
+
+    nav li {
+        border-bottom: none;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
     h4 {
         margin-left: 10%;
         margin-right: 10%;
     }
 
-    nav {
-        text-align: center;
-        font-size: 1.5em;
-        font-family: 'Bebas Neue', cursive;
-        background-color: #3B4D57;
-        border-radius: 15px;
-    }
-    
-    nav a {
-        text-decoration: none;
-    }
-    
-    nav a:link {
-        color: #D2B48C;
-    }
-    
-    nav a:visited {
-        color: #D2B48C;
-    }
-    
-    nav a:hover {
-        color: #CC9933;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        font-size: 1.25em;
-        margin: 0;
-        padding: 0;
-    }
-    
-    nav li {
-        border-bottom: 1px solid #fff;
-        padding: .5em 1em;
-        width: 100%;
-    }
-    
     main {
-        display: block;
-        padding-top: 1em;
-        padding-bottom:5.75em;
-        padding-right: 0em;
-        padding-left: 1em;
-        background-color: hsla(233, 27%, 43%, 0.75);
-        font-size: 1em;
-        color:#fff;
-        text-align: left;
-        position: absolute;
-        width: 96%;
-        border-radius: 20px;
-    }
-    
-    main h2, h3, h4, p, div, ul, dl {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    
-    main ul {
-        padding-left: 2em;
+        width: 98%;
     }
 
-    #mobile {
-        display: inline;
-    }
-    
-    #desktop {
-        display: none;
-    }
-    
     footer {
-        background-color: hsla(34, 29%, 33%, 0.95);
-        font-size: .60em;
-        font-style: italic;
-        text-align: center;
-        padding-bottom: 1em;
-        border-top: 2px solid #8C3826;
-        
-        position: fixed;
-        bottom: 0;
-        width: 96%;
-        height: 60px; 
+        width: 98%;
     }
+}
 
-    #grid {
-        background-color: hsla(30, 40%, 10%, 0.562);
-        color:#CC9933;
-        width: 100%;
-    }
+/* Large Layout */
+@media (min-width: 1024px) {
+    @supports (display: grid) {
+        header {
+            text-align: center;
+            padding-top: 0px;
+            width: 75%;
+            margin: auto;
+        }
 
-    #bungee {
-        font-family: 'Bungee Inline', cursive;
-        color:#fff;
-        padding-right: 10px;
-    }
-
-    .column {
-        float: left;
-        width: 100%;
-        object-position: left;
-      }
-    
-    /* Medium Layout */
-    @media (min-width: 600px) {
         h1 {
-            font-size: 4em;
+            grid-area: header;
+            color: #fff;
+            text-align: center;
+            font-size: 6em;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            color: #252a2c;
         }
 
         nav {
-            font-size: 1.25em;
             grid-area: nav;
-        }
-
-        nav ul {
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            font-size: 1em;
+            font-size: 1.9em;
+            border-bottom: 2px solid #fff;
+            padding-left: 10px;
         }
 
         nav li {
-            border-bottom: none;
+            padding: .5em 1em;
+            width: 100%;
         }
 
-        #mobile {
-            display: none;
-        }
-
-        #desktop {
-            display: inline;
-        }
-
-        h4 {
-            margin-left: 10%;
-            margin-right: 10%;
+        body {
+            /* background-image: url(images/Cars/Leaderboard.jpg); */
+            text-align: left;
+            background-position: center;
+            background-size: cover;
+            scroll-behavior: smooth;
+            background-repeat: no-repeat;
         }
 
         main {
-            width: 98%;
+            text-align: left;
+            width: 99%;
+        }
+
+        nav ul {
+            flex-direction: row;
+            font-size: 1.25em;
+            /* padding-right: 100px; */
+        }
+
+        .column {
+            float: left;
+            width: 50%;
         }
 
         footer {
-            width: 98%;
+            background-color: #766f62;
+            font-size: .80em;
+            font-style: italic;
+            text-align: center;
+
+            position: fixed;
+            bottom: 0;
+            width: 99%;
+            height: 75px;
         }
-
-
     }
-    
-    /* Large Layout */
-    @media (min-width: 1024px) {
-        @supports (display: grid) {
-
-            header {
-                grid-area: header;
-                text-align: center;
-                padding-top: 0px;
-            }
-            
-    
-            h1 {
-                grid-area: header;
-                color: #fff;
-                text-align: center;
-                font-size: 6em;
-                margin-top: 2vh;
-                margin-bottom: 2vh;
-                color: #252a2c;
-            }
-    
-            nav {
-                grid-area: nav;
-                font-size: 2em;
-                border-bottom: 2px solid #fff;
-            }
-    
-            nav li {
-                padding: .5em 1em;
-                width: 100%;
-            }
-
-            body {
-                /* background-image: url(images/Cars/Leaderboard.jpg); */
-                text-align: left;
-                background-position: center;
-                background-size: cover;
-                scroll-behavior: smooth;
-                background-repeat: no-repeat;
-            }
-
-            main {
-                text-align: left;
-                width: 99%;
-            }
-    
-            nav ul {
-                flex-direction: row;
-                font-size: 1.25em;
-                /* padding-right: 100px; */
-            }
-
-            .column {
-                float: left;
-                width: 50%;
-              }
-
-            footer {
-                background-color: hsla(34, 29%, 33%, 0.75);
-                font-size: .80em;
-                font-style: italic;
-                text-align: center;
-                /* padding-bottom: 1em; */
-                border-top: 2px solid #8C3826;
-                
-                position: fixed;
-                bottom: 0;
-                width: 99%;
-                height: 75px; 
-            }
-            }
-        }
-    
-    
+}

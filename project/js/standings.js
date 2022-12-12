@@ -23,7 +23,8 @@ function outData(val){
       html += `<div id="grid"><div id="bungee">#${ind+1}. ${ele.Driver.givenName} 
       ${ele.Driver.familyName}</div><u><b>Points:</b></u> <i>${ele.points}</i>
        ... <u><b>Season Wins:</b></u> <i>${ele.wins}</i> ... 
-      <u><b>Team:</b></u> <i>${ele.Constructors[0].name}</i></div>`;
+      <u><b>Team:</b></u> <i>${ele.Constructors[0].name}</i> ... 
+      <u><b>Nationality:</b></u> <i>${ele.Driver.nationality}</i></div>`;
   })
   output.innerHTML = html;
 }

@@ -1,18 +1,18 @@
 * {
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
 }
 
 /* Make the images invisible by default */
 .Containers {
-  display: none;
+	display: none;
 }
 
 /* forward & Back buttons
@@ -38,63 +38,75 @@ box-sizing: border-box;
 } */
 
 /*when the user hovers,add a black background with some little opacity */
-.Back:hover, .forward:hover {
-  background-color: rgba(0,0,0,0.8);
+.Back:hover,
+.forward:hover {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption Info */
 .Info {
-  color: #e3e3e3;
-  font-size: 16px;
-  padding: 10px 14px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
+	color: #e3e3e3;
+	font-size: 16px;
+	padding: 10px 14px;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
 }
 
 /* Worknumbering (1/3 etc) */
 .MessageInfo {
-  color: #f2f2f3;
-  font-size: 14px;
-  padding: 10px 14px;
-  position: absolute;
-  top: 0;
+	color: #f2f2f3;
+	font-size: 14px;
+	padding: 10px 14px;
+	position: absolute;
+	top: 0;
 }
 
 /* The circles or bullets and indicators */
 .dots {
-  cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: auto;
-  background-color: #acc;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-  
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	margin: auto;
+	background-color: #acc;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.5s ease;
+
 }
 
-.enable, .dots:hover {
-  background-color: #717161;
+.enable,
+.dots:hover {
+	background-color: #717161;
 }
 
 /* Faint animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s;
-  animation-name: fade;
-  animation-duration: 1.4s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.4s;
+	animation-name: fade;
+	animation-duration: 1.4s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+	from {
+		opacity: .5
+	}
+
+	to {
+		opacity: 2
+	}
 }
 
 @keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+	from {
+		opacity: .5
+	}
+
+	to {
+		opacity: 2
+	}
 }
 
 
@@ -134,17 +146,18 @@ box-sizing: border-box;
 body {
 	background-color: #766f62;
 	color: #221811;
-	
+
 	background-position: center;
 	background-size: cover;
 	scroll-behavior: auto;
 	font-family: 'Cairo', sans-serif;
-    margin: 0;
+	margin: 0;
 }
 
 header {
 	background-color: #bfcccf;
 	text-align: center;
+	border-radius: 30px;
 }
 
 header a {
@@ -153,12 +166,12 @@ header a {
 
 header a:link {
 	color: #3B4D57;
-    outline: 5px #000;
+	outline: 5px #000;
 }
 
 header a:visited {
 	color: #3B4D57;
-    outline: 5px #000;
+	outline: 5px #000;
 }
 
 header a:hover {
@@ -168,20 +181,23 @@ header a:hover {
 h1 {
 	font-size: 2.5em;
 	font-family: 'Montserrat Subrayada', sans-serif;
-    color: #DAE2E7;
+	color: #DAE2E7;
 }
 
 h1 a:hover {
-	color:#CC9933;
+	color: #CC9933;
 }
 
 h2 {
 	color: #8C3826;
+	font-size: 2em;
 }
 
-h3, dt {
+h3,
+dt {
 	color: #8C3826;
 	font-size: 1.5em;
+	font-family: 'Bungee Inline', cursive;
 }
 
 h4 {
@@ -206,7 +222,7 @@ nav {
 	text-align: center;
 	font-size: 1.5em;
 	font-family: 'Bebas Neue', cursive;
-	background-color:#3B4D57;
+	background-color: #3B4D57;
 	border-bottom: 2px solid #fff;
 	border-radius: 30px;
 }
@@ -229,33 +245,48 @@ nav a:hover {
 
 nav ul {
 	list-style-type: none;
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	font-size: 1.25em;
-    margin: 0;
+	margin: 0;
 	padding: 0;
 }
 
 nav li {
-	border-bottom: 1px solid #FEF6C2;
+	border-bottom: 1px solid #bfcccf;
 	padding: .5em 1em;
 	width: 100%;
 }
 
 main {
-	border-top:2px solid #8C3826;
+	border-top: 2px solid #8C3826;
 	background-color: #bfcccf;
 	display: block;
 	padding: 1em 0 1em 2em;
-	
 }
 
-main h2, h3, p, div, ul, dl {
+main a:link {
+	color: #8C3826;
+	font-size: 1.25em;
+}
+
+main a:visited {
+	color: #717161;
+	font-size: 1.25em;
+}
+
+main h2,
+h3,
+p,
+div,
+ul,
+dl {
 	padding-right: 1em;
 }
 
 main ul {
 	padding-left: 2em;
+	padding-top: 0;
 }
 
 img {
@@ -273,11 +304,11 @@ img {
 }
 
 #mobile {
-    display: inline;
+	display: inline;
 }
 
 #desktop {
-    display: none;
+	display: none;
 }
 
 footer {
@@ -289,6 +320,14 @@ footer {
 	border-top: 2px solid #8C3826;
 }
 
+footer a:link {
+	color: #acc;
+}
+
+footer a:visited {
+	color: #8C3826;
+}
+
 #slideshow {
 	margin: auto;
 	padding-left: 30px;
@@ -298,22 +337,47 @@ footer {
 	float: left;
 	width: 100%;
 	object-position: left;
-  }
+}
+
+.row {
+	padding: 0;
+}
 
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
-  }
+}
 
-  #navfill {
-	background-color: #bfcccf;
-  }
+#navfill {
+	background-color: #717161;
+	padding: 0;
+}
+
+.current {
+	text-transform: capitalize;
+	text-decoration-line: underline;
+	font-style: oblique;
+}
+
+.fill {
+	background-color: #717161;
+	border-radius: 20px;
+	color: #fff;
+}
+
+.fill2 {
+	background-color: #fff;
+	border-radius: 20px;
+	padding-left: 10px;
+	font-family: 'Bungee Inline', cursive;
+}
 
 /* Medium Layout */
 @media (min-width: 600px) {
 	header {
 		text-align: center;
+		border-radius: 30px;
 	}
 
 	h1 {
@@ -321,7 +385,7 @@ footer {
 	}
 
 	nav {
-		font-size: 1.25em;
+		font-size: 1em;
 		grid-area: nav;
 	}
 
@@ -334,10 +398,10 @@ footer {
 		border-bottom: none;
 	}
 
-    video {
-        max-width: 100%;
-        height: auto;
-      }
+	video {
+		max-width: 100%;
+		height: auto;
+	}
 
 	#homehero {
 		background-image: url(images/cars/pitstop1.jpg);
@@ -361,6 +425,7 @@ footer {
 		margin: auto;
 		padding-left: 33px;
 	}
+
 }
 
 /* Large Layout */
@@ -371,17 +436,19 @@ footer {
 			text-align: center;
 			padding-top: 5px;
 			padding-bottom: 1px;
+			border-radius: 0;
 		}
 
-        h1 {
-            grid-area: header;
+		h1 {
+			grid-area: header;
 			font-size: 6em;
 			margin-top: 2vh;
 			margin-bottom: 2vh;
-        }
+		}
 
 		nav {
-			font-size: 2em;
+			padding-left: 10px;
+			font-size: 1.9em;
 			border-bottom: 2px solid #fff;
 		}
 
@@ -414,13 +481,18 @@ footer {
 		}
 
 		#slideshow {
-		margin: auto;
+			margin: auto;
 		}
 
 		.column {
 			float: left;
 			width: 50%;
 			object-position: left;
-		  }
-	}	
+		}
+
+		#navfill {
+			background-color: #bfcccf;
+			padding: 0;
+		}
+	}
 }

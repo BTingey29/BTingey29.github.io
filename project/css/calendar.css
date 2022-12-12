@@ -50,6 +50,7 @@ nav {
     font-size: 1.5em;
     font-family: 'Bebas Neue', cursive;
     background-color: #3B4D57;
+    border-bottom: 2px solid #fff;
     border-radius: 30px;
 }
 
@@ -88,7 +89,7 @@ nav li {
 main {
     display: block;
     padding: 0 0 2em 0;
-    color:#000;
+    color: #000;
 }
 
 main h2,
@@ -116,11 +117,19 @@ main ul {
 
 footer {
     background-color: hsla(34, 29%, 33%, 0.562);
-        font-size: 1em;
-        font-style: italic;
-        text-align: center;
-        padding-bottom: 1em;
-        border-top: 2px solid #8C3826;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 1em;
+    border-top: 2px solid #8C3826;
+}
+
+footer a:link {
+    color: #acc;
+}
+
+footer a:visited {
+    color: #8C3826;
 }
 
 #calendar {
@@ -128,13 +137,14 @@ footer {
     opacity: 0.5;
     margin-top: 5vh;
 
-    position: relative; 
+    position: relative;
     padding-bottom: 66.66%;
     padding-top: 25px;
     height: 0;
-    display: block; 
+    display: block;
     width: 100%;
     overflow: hidden;
+    border: none;
 }
 
 #calendar iframe {
@@ -149,6 +159,12 @@ footer {
     text-align: center;
     margin-top: 5vh;
     opacity: 1;
+}
+
+.current {
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    font-style: oblique;
 }
 
 /* Medium Layout */
@@ -166,6 +182,10 @@ footer {
     main {
         display: block;
         padding: 0 0em 2em 0;
+    }
+
+    nav {
+        font-size: 1em;
     }
 
     nav ul {
@@ -190,11 +210,11 @@ footer {
         opacity: 0.5;
         margin-top: 5vh;
 
-        position: relative; 
+        position: relative;
         padding-bottom: 75%;
         padding-top: 25px;
         height: 0;
-        display: block; 
+        display: block;
         width: 100%;
         overflow: hidden;
     }
@@ -233,8 +253,9 @@ footer {
             }
 
             nav {
-                font-size: 2em;
+                font-size: 1.9em;
                 font-family: 'Bebas Neue', cursive;
+                padding-left: 10px;
             }
 
             main {
@@ -254,12 +275,12 @@ footer {
                 opacity: 0.5;
                 margin-top: 5vh;
                 margin-left: 100px;
-        
-                position: relative; 
+
+                position: relative;
                 padding-bottom: 56.25%;
                 padding-top: 25px;
                 height: 0;
-                display: block; 
+                display: block;
                 width: 85%;
                 overflow: hidden;
             }

@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryant Tingey &mdash; Season Calendar</title>
-    <meta name="description" content="JavaJam Coffee Bar Case Study">
-    <meta name="author" content="Bryant Tingey">
-    <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryant Tingey &mdash; Season Calendar</title>
+  <meta name="description" content="Final Project">
+  <meta name="author" content="Bryant Tingey">
+  <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
 
-    <link href="calendar.css" rel="stylesheet">
+  <link href="css/calendar.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@500&family=Faster+One&family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="checkered-flag-icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@500&family=Faster+One&family=Montserrat+Subrayada:wght@700&display=swap"
+    rel="stylesheet">
 
+  <link rel="shortcut icon" href="checkered-flag-icon.ico">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8D1WYMY6L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-Z8D1WYMY6L');
+  </script>
 </head>
 
 <body>
@@ -24,36 +40,47 @@
     <source src="images/video/birds_eye_view.webm" type="video/webm">
     <source src="images/video/birds_eye_view.mp4" type="video/mp4">
   </video>
-        <header><h1><a href="index.html">Season Calendar</a></h1></header>
-        
+  <header>
+    <h1><a href="index.html">Season Calendar</a></h1>
+  </header>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Dashboard</a></li>
-            <li><a href="leaderboard.html">Leaderboard</a></li>
-            <li><a href="team.html">Teams</a></li>
-            <li><a href="calendar.html">Season Calendar</a></li>
-          </ul>
-        </nav>
-        
-        <main>
-        <h2>Seasonal Calendar & Events: </h2>
-        <p>Typical Season Durations: </p>
-        <ul>February - November</ul>
 
-            <div id="calendar">
-              <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23717161&ctz=America%2FDenver&title=Formula%20One%20Calendar%20%26%20Events&showPrint=1&showTabs=1&src=OXRka3MyMXIwYjR2NTZuZmNrb2hvNWozNTM5MmtqMTFAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23A79B8E" 
-              style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" allowfullscreen>
-              </iframe>
-            </div>
-        </main>
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a href="team.html">Teams</a></li>
+      <li><a class="current" href="calendar.html">Season Calendar</a></li>
+      <li><a href="search.html" aria-label="search"><i class="fa fa-search"></i></a></li>
+    </ul>
+  </nav>
 
-        <footer>
-          Copyright &copy; &bigstar; 2022 The Pit-Stop &bigstar;<br>
-          <a href="mailto:yourfirstname.yourlastname@javajamcoffee.com">bryant.tingey@javajamcoffee.com</a>
-          <br>
-          <a href="#top">Return to Top</a>
-        </footer>
+  <main>
+    <h2>Seasonal Calendar & Events: </h2>
+    <p>Typical Season Durations: </p>
+    <u>February Through November</u>
+
+    <div id="calendar">
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23717161&ctz=America%2FDenver&title=Formula%20One%20Calendar%20%26%20Events&showPrint=1&showTabs=1&src=OXRka3MyMXIwYjR2NTZuZmNrb2hvNWozNTM5MmtqMTFAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23A79B8E"
+        style="border:solid 1px #777" width="800" height="600" allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    Copyright &copy; &bigstar; 2022 The Pit-Stop &bigstar;<br>
+    <a href="mailto:yourfirstname.yourlastname@ThePit-Stop.com">bryant.tingey@ThePit-Stop.com</a> (339)-123-4567
+    <br>
+    <a href="#top">Return to Top</a>
+
+    <form id="form" role="search" method="get" action="https://www.google.com/search">
+      <input type="hidden" name="sitesearch" value="https://btingey29.github.io/">
+      <input type="search" id="query" placeholder="Search The Pit-Stop" size=15 aria-label="Search">
+      <button><b>Search</b></button>
+    </form>
+  </footer>
 
 </body>
+
 </html>
