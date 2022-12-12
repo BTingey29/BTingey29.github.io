@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryant Tingey &mdash; Leaderboard</title>
-    <meta name="description" content="JavaJam Coffee Bar Case Study">
-    <meta name="author" content="Bryant Tingey">
-    <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryant Tingey &mdash; Leaderboard</title>
+  <meta name="description" content="JavaJam Coffee Bar Case Study">
+  <meta name="author" content="Bryant Tingey">
+  <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
 
-    <link href="project.css" rel="stylesheet">
+  <link href="leaderboard.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faster+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@500&family=Bungee+Inline&family=Faster+One&family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="checkered-flag-icon.ico">
-
+  <link rel="shortcut icon" href="checkered-flag-icon.ico">
 </head>
-<body>
-    <div id="wrapper">
-        <header>
-          <h1><a href="index.html">Leaderboard</a></h1>
-        </header>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Dashboard</a></li>
-            <li><a href="leaderboard.html">Leaderboard</a></li>
-            <li><a href="team.html">Teams</a></li>
-            <li><a href="calendar.html">Season Calendar</a></li>
-          </ul>
-        </nav>
-        <main>
-          
-        </main>
+<body>
+  <header>
+    <h1><a href="index.html">Leaderboard</a></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a href="team.html">Teams</a></li>
+      <li><a href="calendar.html">Season Calendar</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p>Dolor culpa eiusmod occaecat in magna voluptate. 
+      Sint esse labore mollit elit sit ex amet nostrud. Occaecat sit voluptate dolore qui deserunt labore laborum aliquip excepteur culpa. Id elit eiusmod nostrud ea commodo cillum officia eiusmod.</p>
+  
+    <p>Ex mollit laboris ad nisi consequat officia sint. Aliquip consequat qui cillum ullamco duis ad ullamco do dolore aliquip adipisicing duis commodo amet. Nulla cupidatat reprehenderit non mollit id nisi enim incididunt mollit.</p>
+    <br></br>
+
+    <div class="row">
+      <div class="column">
+      <h2>Current Seasonal Driver Standings: </h2>
+      <div>
+        <button class="btn">Click Me</button>
+        <div class="output"></div>
+        <!-- <button class="btn1">Clear</button> -->
+      </div>
+      <script src = "js/standings.js"></script>
+      </div>
+      
+
+      <div class="column">
+      <h2>Current Seasonal Constructor (Team) Standings: </h2>
+      <div>
+        <button class="btn2">Click Me 2</button>
+        <div class="output2"></div>
+        <!-- <button class="btn1">Clear</button> -->
+      </div>
+      <script src = "js/standings-team.js"></script>
+      </div>
+      <br></br>
+    </div>
+
+    </main>
+
+    <footer>
+      Copyright &copy; &bigstar; 2022 The Pit-Stop &bigstar;<br>
+      <a href="mailto:yourfirstname.yourlastname@javajamcoffee.com">bryant.tingey@ThePitStop.com</a>
+      <br>
+      <a href="#top">Return to Top</a>
+    </footer> 
+
 </body>
+
 </html>

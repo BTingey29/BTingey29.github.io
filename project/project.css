@@ -2,27 +2,149 @@
 box-sizing: border-box;
 }
 
-/* Configure Small Layout */
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+} */
+
+/* Place the "forward button" to the right
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+} */
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: auto;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+  
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small Layout */
 body {
-	background-color: #8f4e4d;
+	background-color: #766f62;
 	color: #221811;
-	font-family: 'Bebas Neue', cursive;
+	
+	background-position: center;
+	background-size: cover;
+	scroll-behavior: auto;
+	font-family: 'Cairo', sans-serif;
     margin: 0;
 }
 
-#wrapper {
-	background-color: #794242;
-	padding: 0;
-}
-
 header {
-	background-repeat: no-repeat;
-	background-color: #8f6556;
-    height: 128px;
-	padding-left: 105px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	background-color: #bfcccf;
+	text-align: center;
 }
 
 header a {
@@ -30,12 +152,12 @@ header a {
 }
 
 header a:link {
-	color: #d3c9c9;
+	color: #3B4D57;
     outline: 5px #000;
 }
 
 header a:visited {
-	color: #d3c9c9;
+	color: #3B4D57;
     outline: 5px #000;
 }
 
@@ -44,10 +166,13 @@ header a:hover {
 }
 
 h1 {
-	font-size: 2em;
-	font-family: 'Faster One', cursive;
+	font-size: 2.5em;
+	font-family: 'Montserrat Subrayada', sans-serif;
     color: #DAE2E7;
-    outline: 5px #000;
+}
+
+h1 a:hover {
+	color:#CC9933;
 }
 
 h2 {
@@ -60,12 +185,12 @@ h3, dt {
 }
 
 h4 {
-	margin-left: 10%;
-	margin-right: 10%;
+	color: #8C3826;
+	font-size: 1em;
 }
 
 #drivers {
-	background-color: #bfcccf;
+	background-color: #766f62;
 	font-size: 1.2em;
 	float: right;
 	padding: 1em 1em 1em 1em;
@@ -80,7 +205,10 @@ h4 {
 nav {
 	text-align: center;
 	font-size: 1.5em;
-    font-family: 'Bebas Neue', cursive;
+	font-family: 'Bebas Neue', cursive;
+	background-color:#3B4D57;
+	border-bottom: 2px solid #fff;
+	border-radius: 30px;
 }
 
 nav a {
@@ -88,11 +216,11 @@ nav a {
 }
 
 nav a:link {
-	color: #3B4D57;
+	color: #DAE2E7;
 }
 
 nav a:visited {
-	color: #D2B48C;
+	color: #DAE2E7;
 }
 
 nav a:hover {
@@ -115,24 +243,19 @@ nav li {
 }
 
 main {
-	background-color: #7295aa;
+	border-top:2px solid #8C3826;
+	background-color: #bfcccf;
 	display: block;
-	padding: 0 0 2em 0;
+	padding: 1em 0 1em 2em;
+	
 }
 
-main h2, h3, h4, p, div, ul, dl {
-	padding-left: 1em;
+main h2, h3, p, div, ul, dl {
 	padding-right: 1em;
 }
 
 main ul {
 	padding-left: 2em;
-}
-
-.details {
-	padding-left: 20%;
-	padding-right: 20%;
-	overflow: auto;
 }
 
 img {
@@ -141,24 +264,10 @@ img {
 	height: auto;
 }
 
-#homehero {
+#homerace {
 	background-position: center;
 	height: 500px;
-	background-image: url(images/cars/pitstop1.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#heromugs {
-	height: 300px;
-	background-image: url(images/heromugs.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#heroguitar {
-	height: 300px;
-	background-image: url(images/heroguitar.jpg);
+	background-image: url(images/cars/racing-gfbad98df1_1920.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -172,23 +281,48 @@ img {
 }
 
 footer {
-	background-color: hsla(34, 29%, 33%, 0.562);
-	font-size: .60em;
+	background-color: #766f62;
+	font-size: 1em;
 	font-style: italic;
 	text-align: center;
 	padding-bottom: 1em;
 	border-top: 2px solid #8C3826;
 }
 
+#slideshow {
+	margin: auto;
+	padding-left: 30px;
+}
+
+.column {
+	float: left;
+	width: 100%;
+	object-position: left;
+  }
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  #navfill {
+	background-color: #bfcccf;
+  }
+
 /* Medium Layout */
 @media (min-width: 600px) {
 	header {
-		padding-left: 0;
 		text-align: center;
 	}
 
 	h1 {
-		font-size: 3em;
+		font-size: 4em;
+	}
+
+	nav {
+		font-size: 1.25em;
+		grid-area: nav;
 	}
 
 	nav ul {
@@ -210,14 +344,6 @@ footer {
 		height: 50vh;
 	}
 
-	#heromugs {
-		background-image: url(images/heromugs.jpg);
-	}
-
-	#heroguitar {
-		background-image: url(images/heroguitar.jpg);
-	}
-
 	#flow {
 		display: flex;
 		flex-direction: row;
@@ -231,14 +357,9 @@ footer {
 		display: inline;
 	}
 
-	.details {
-		display: flex;
-		flex-direction: row;
-	}
-
-	h4 {
-		margin-left: 10%;
-		margin-right: 10%;
+	#slideshow {
+		margin: auto;
+		padding-left: 33px;
 	}
 }
 
@@ -247,26 +368,31 @@ footer {
 	@supports (display: grid) {
 		header {
 			grid-area: header;
-            padding-bottom: 200px;
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 1px;
 		}
 
         h1 {
-            font-size: 6em;
-            color: #000000;
-            outline-color: #000;
+            grid-area: header;
+			font-size: 6em;
+			margin-top: 2vh;
+			margin-bottom: 2vh;
         }
 
 		nav {
-			grid-area: nav;
+			font-size: 2em;
+			border-bottom: 2px solid #fff;
 		}
 
 		main {
-			grid-area: main;
+			text-align: left;
 			padding-left: 100px;
 			padding-right: 100px;
-			background-position: center;
-			/* background-color: #000; */
-			/* padding: 0 5em 0 5em; */
+			/* grid-area: main;
+			padding-left: 100px;
+			padding-right: 100px;
+			background-position: center; */
 		}
 
 		h2 {
@@ -279,7 +405,7 @@ footer {
 			grid-area: footer;
 		}
 
-		#homehero {
+		#homerace {
 			background-position: center;
 			height: 500px;
 			background-image: url(images/cars/race-car-gc6c578599_1920.jpg);
@@ -287,26 +413,14 @@ footer {
 			background-size: 100% 100%;
 		}
 
-		#wrapper {
-			display: grid;
-			grid-template:
-				"header header"
-				"nav nav"
-				"main main"
-				"footer footer"
-				/ 200px;
+		#slideshow {
+		margin: auto;
 		}
 
-		nav ul {
-			flex-direction:row;
-            /* padding-right: 200px; */
-		}
-
-		header {
-            background-size: 100% 100%;
-            background-color: #8f6556;
-            border-radius: 25px;
-              }
-		}
-	}
-
+		.column {
+			float: left;
+			width: 50%;
+			object-position: left;
+		  }
+	}	
+}
