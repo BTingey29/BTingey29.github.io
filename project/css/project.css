@@ -414,11 +414,6 @@ footer a:visited {
 		height: auto;
 	}
 
-	#homehero {
-		background-image: url(images/cars/pitstop1.jpg);
-		height: 50vh;
-	}
-
 	#flow {
 		display: flex;
 		flex-direction: row;
