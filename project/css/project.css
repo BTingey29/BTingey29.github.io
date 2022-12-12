@@ -341,6 +341,7 @@ footer a:visited {
 
 .row {
 	padding: 0;
+	border-bottom:2px solid #8C3826; 
 }
 
 .row:after {
@@ -364,6 +365,16 @@ footer a:visited {
 	background-color: #717161;
 	border-radius: 20px;
 	color: #fff;
+}
+
+.fill a:link {
+	color: #fff;
+	font-size: 1em;
+}
+
+.fill a:visited {
+	color: #fff;
+	font-size: 1em;
 }
 
 .fill2 {
