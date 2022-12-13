@@ -1,6 +1,6 @@
 const btn = document.querySelector('.btn');
 const output = document.querySelector('.output');
-const url = 'http://ergast.com/api/f1/current/driverStandings.json'
+const url = 'https://ergast.com/api/f1/current/driverStandings.json'
 
 btn.onclick = ()=>{
   output.innerHTML = 'Connecting...';
