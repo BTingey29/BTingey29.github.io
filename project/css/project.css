@@ -15,28 +15,6 @@
 	display: none;
 }
 
-/* forward & Back buttons
-.Back, .forward {
-  cursor: pointer;
-  position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 17px;
-  color: grey;
-  font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
-  user-select: none;
-} */
-
-/* Place the "forward button" to the right
-.forward {
-  right: 0;
-  border-radius: 4px 0 0 4px;
-} */
-
 /*when the user hovers,add a black background with some little opacity */
 .Back:hover,
 .forward:hover {
@@ -73,7 +51,6 @@
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.5s ease;
-
 }
 
 .enable,
@@ -108,37 +85,6 @@
 		opacity: 2
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -341,7 +287,7 @@ footer a:visited {
 
 .row {
 	padding: 0;
-	border-bottom:2px solid #8C3826; 
+	border-bottom: 2px solid #8C3826;
 }
 
 .row:after {
@@ -454,7 +400,7 @@ footer a:visited {
 
 		nav {
 			padding-left: 10px;
-			font-size: 1.9em;
+			font-size: 1.75em;
 			border-bottom: 2px solid #fff;
 		}
 
@@ -462,10 +408,6 @@ footer a:visited {
 			text-align: left;
 			padding-left: 100px;
 			padding-right: 100px;
-			/* grid-area: main;
-			padding-left: 100px;
-			padding-right: 100px;
-			background-position: center; */
 		}
 
 		h2 {

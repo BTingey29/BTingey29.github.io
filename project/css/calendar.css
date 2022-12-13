@@ -228,16 +228,6 @@ footer a:visited {
     /* Large Layout */
     @media (min-width: 1024px) {
         @supports (display: grid) {
-            /* video {
-                width: 100vw;
-                height: 100vh;
-                object-fit: cover;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: -1;
-            } */
-
             header {
                 grid-area: header;
                 text-align: center;
@@ -253,7 +243,7 @@ footer a:visited {
             }
 
             nav {
-                font-size: 1.9em;
+                font-size: 1.75em;
                 font-family: 'Bebas Neue', cursive;
                 padding-left: 10px;
             }

@@ -271,7 +271,7 @@ footer a:visited {
 
         nav {
             grid-area: nav;
-            font-size: 1.9em;
+            font-size: 1.75em;
             border-bottom: 2px solid #fff;
             padding-left: 10px;
         }
@@ -282,7 +282,6 @@ footer a:visited {
         }
 
         body {
-            /* background-image: url(images/Cars/Leaderboard.jpg); */
             text-align: left;
             background-position: center;
             background-size: cover;
@@ -298,7 +297,6 @@ footer a:visited {
         nav ul {
             flex-direction: row;
             font-size: 1.25em;
-            /* padding-right: 100px; */
         }
 
         .column {
